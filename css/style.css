@@ -1,0 +1,16 @@
+header {
+	background-image: url(../images/background.jpg);
+	padding: 10px 0;
+}
+
+.main {
+	padding: 20px 0;
+}
+
+.clock-content {
+	margin-left: 60px;
+}
+
+.guess-img {
+	border: 4px solid #fff;
+}
