@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="flipclock.css">
+	</head>
+	<body>
+    <h1>Cual es el nombre del fotografo?</h1>
+		<img src="reto1.png">
+    <div class="your-clock"></div>
+
+		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="flipclock.min.js"></script>
+    <script>
+      var clock = $('.your-clock').FlipClock({
+        //"countdown":true
+        "autostart":false
+      });
+      clock.setTime(300);
+      clock.setCountdown(true);
+      clock.start();
+    </script>
+	</body>
+</html>
