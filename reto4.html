@@ -18,17 +18,29 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="clock-content">
-              <h2 class="text-center">Kata time!</h2>
-							<p>
-								Crear una clase en Javascript llamada "Animal" que toma los argumentos "name" y "type". Debería tener un método "toString" que retorne una cadena de texto indicando la información de los argumentos suministrados en una forma legible.
-Debería permitir que la propiedad "name" sea seteable, lo siguiente es un ejemplo de cómo se usaría el código final:
-							</p>
-							<pre><code class="language-javascript">var dog = new Animal('Max', 'dog');
+              <h2 class="text-center">Modelado</h2>
 
-dog.toString(); // should return 'Max is a dog'
-dog.type; // should == 'dog'
-dog.name; // should == 'Max'
-dog.name = 'Lassie'; // should set name to 'Lassie'</code></pre>
+<p>Crear en un tiempo específico el diagrama solicitado, al terminar el tiempo el equipo contrario colocara data real dentro del diagrama y así se determinará si el reto fue superado. Los primeros 5 mins se pueden responder preguntas sobre el enunciado en voz alta y frente al equipo contrario (15min)</p>
+
+<p>Se desea hacer la interfaz web de un calendario en el que aparezcan las tareas que se deben realizar cada dia, por lo que es necesario modelar en la BD un calendario basado en una planificación (asumir que la BD esta vacia, es decir, no tiene ninguna tabla):<p>
+
+Miercoles: Tarea 1, Tarea 2 y Tarea 3<br>
+Jueves: Tarea 4, Tarea 5<br>
+Viernes: Tarea 6, Tarea 7, Tarea 8 y Tarea 9<br>
+Lunes: Tarea 10<br>
+…<br><br>
+
+Si el dia Jueves es no laboral<br>
+Miercoles: Tarea 1, Tarea 2 y Tarea 3<br>
+Viernes: Tarea 4, Tarea 5<br>
+Lunes: Tarea 6, Tarea 7, Tarea 8 y Tarea 9<br>
+Martes: Tarea 10<br>
+...<br><br>
+
+Tomar en cuenta:<br>
+Solo días laborales.<br>
+Es posible agregar días no laborales bajo demanda (protestas, guarimbas, etc) lo cual modificará el calendario.<br>
+
               <h2>
                 <div class="your-clock"></div>
               </h2>
