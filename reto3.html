@@ -16,21 +16,22 @@
     <div class="main">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-8 col-sm-offset-2">
             <div class="clock-content">
               <h2 class="text-center">Kata time!</h2>
-							<p>
-								Crear una clase en Javascript llamada "Animal" que toma los argumentos "name" y "type". Debería tener un método "toString" que retorne una cadena de texto indicando la información de los argumentos suministrados en una forma legible.
-Debería permitir que la propiedad "name" sea seteable, lo siguiente es un ejemplo de cómo se usaría el código final:
-							</p>
+							<h4>
+								Crear una clase en Javascript llamada "Animal" que toma los argumentos "name" y "type". Debería tener un método "toString" que retorne una cadena de texto indicando la información de los argumentos suministrados en una forma legible.<br>
+                Debería permitir que la propiedad "name" sea seteable, lo siguiente es un ejemplo de cómo se usaría el código final:
+							</h4>
 							<pre><code class="language-javascript">var dog = new Animal('Max', 'dog');
-
-dog.toString(); // should return 'Max is a dog'
-dog.type; // should == 'dog'
-dog.name; // should == 'Max'
-dog.name = 'Lassie'; // should set name to 'Lassie'</code></pre>
+                dog.toString(); // should return 'Max is a dog'
+                dog.type; // should == 'dog'
+                dog.name; // should == 'Max'
+                dog.name = 'Lassie'; // should set name to 'Lassie'</code></pre>
               <h2>
-                <div class="your-clock"></div>
+                <div class="text-center">
+                  <div class="your-clock"></div>
+                </div>
               </h2>
             </div>
           </div>
@@ -47,7 +48,7 @@ dog.name = 'Lassie'; // should set name to 'Lassie'</code></pre>
           "autostart":false
         });
         clock.setCountdown(true);
-        clock.setTime(300);
+        clock.setTime(600);
         clock.start();
       });
     </script>
