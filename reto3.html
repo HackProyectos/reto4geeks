@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/flipclock.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+		<link href="css/prism.css" rel="stylesheet" />
+	</head>
+	<body>
+    <header class="text-center">
+      <a href="#">
+        <img src="images/logo.png" alt="">
+      </a>
+    </header>
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="clock-content">
+              <h2 class="text-center">Kata time!</h2>
+							<p>
+								Crear una clase en Javascript llamada "Animal" que toma los argumentos "name" y "type". Debería tener un método "toString" que retorne una cadena de texto indicando la información de los argumentos suministrados en una forma legible.
+Debería permitir que la propiedad "name" sea seteable, lo siguiente es un ejemplo de cómo se usaría el código final:
+							</p>
+							<pre><code class="language-javascript">var dog = new Animal('Max', 'dog');
+
+dog.toString(); // should return 'Max is a dog'
+dog.type; // should == 'dog'
+dog.name; // should == 'Max'
+dog.name = 'Lassie'; // should set name to 'Lassie'</code></pre>
+              <h2>
+                <div class="your-clock"></div>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="js/prism.js"></script>
+		<script src="js/flipclock.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        var clock = $('.your-clock').FlipClock({
+          "autostart":false
+        });
+        clock.setCountdown(true);
+        clock.setTime(300);
+        clock.start();
+      });
+    </script>
+	</body>
+</html>
